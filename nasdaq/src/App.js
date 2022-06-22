@@ -8,11 +8,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          I'm the Root Component. <br/> My name is App.
         </p>
-        <Child name = "Alessandro"/>
-        <Child />
-        <Child name = "Francesco" />
+        <Child name = "Alessandro" year_birthday = "1977"/>
       </header>
     </div>
   );

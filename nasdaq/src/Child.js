@@ -14,4 +14,10 @@ class Child extends Component{
     };
 }
 
+
+Child.defaultProps = {
+    name: "-----"
+}
+
+
 export default Child;

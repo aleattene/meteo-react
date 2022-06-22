@@ -8,9 +8,11 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Welcome to my first React App.
+          I'm the Root Component. <br/> My name is App.
         </p>
+        <Child name = "Aessandro"/>
         <Child />
+        <Child name = "Francesco"/>
       </header>
     </div>
   );

@@ -8,10 +8,10 @@ class Child extends Component{
     render() {
         return (
             <div>
-                I am the Son component of the App
+                I am the Child component of the App and my name is { this.props.name }.
             </div>
-        )
-    }
+        );
+    };
 }
 
 export default Child;

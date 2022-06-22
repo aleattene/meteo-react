@@ -1,22 +1,23 @@
 import React, {Component} from "react";
 import PropTypes from 'prop-types';
-import RowHobby from "./RowHobby";
+import RowCity from "./RowCity";
 
 
 class Child extends Component{
     constructor(props) {
         super(props);
-        this.hobbies = ['Sport', 'Information Technology', 'Psychology']
+        this.cities = ['Milano', 'Roma', 'Ancona', 'Cagliari', 'Olbia']
+        this.state = { temperature: 1 }
+        setInterval(() => this.updateStatus(), 2000)
     }
+    updateStatus = () => this.setState((state, props) => ({ temperature: state.temperature + 0.1 }))
     render() {
-        const { name, year_birthday } = this.props
-        //console.log(this.hobbies)
-        const hobbies = <ul> { this.hobbies.map(hobby => <RowHobby description = { hobby } /> ) } </ul>
+
+        const temperature = this.state.temperature
+        const cities = <ul> { this.cities.map(city => <RowCity cityName = { city } cityTemperature = { temperature.toFixed(1) }/> ) } </ul>
         return (
             <div>
-                <p> My name is { name }. I was born in { year_birthday }. </p>
-                <p> My hobbies:</p>
-                    { hobbies }
+                <p> { cities } </p>
             </div>
         );
     };

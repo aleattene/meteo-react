@@ -9,7 +9,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
         </p>
-        <Child name = "Alessandro" year_birthday = "1977"/>
+        <Child />
       </header>
     </div>
   );

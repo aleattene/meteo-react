@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import PropTypes from 'prop-types';
 
 
 class Child extends Component{
@@ -17,6 +18,11 @@ class Child extends Component{
 
 Child.defaultProps = {
     name: "-----"
+}
+
+Child.propTypes = {
+    name: PropTypes.string,
+    // name: PropTypes.number // Don't work. Why ????
 }
 
 

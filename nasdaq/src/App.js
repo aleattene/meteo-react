@@ -10,9 +10,9 @@ function App() {
         <p>
           I'm the Root Component. <br/> My name is App.
         </p>
-        <Child name = "Aessandro"/>
+        <Child name = "Alessandro"/>
         <Child />
-        <Child name = "Francesco"/>
+        <Child name = "Francesco" />
       </header>
     </div>
   );

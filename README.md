@@ -1,4 +1,5 @@
-Deploy: https://keen-pixie-06e97b.netlify.app/
+Deploy: https://meteoreact.netlify.app/
+
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/52e657c3-0e17-46d1-ba57-4e3137ed28b8/deploy-status)](https://app.netlify.com/sites/keen-pixie-06e97b/deploys)
 

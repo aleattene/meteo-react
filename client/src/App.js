@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import Child from "./Child";
+import Child from "./components/Child";
+import SearchForm from "./components/SearchForm";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
         </p>
+        <SearchForm />
         <Child />
       </header>
     </div>
